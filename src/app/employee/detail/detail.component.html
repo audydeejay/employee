@@ -1,0 +1,17 @@
+<div class="container mt-4" *ngIf="employee">
+  <h3>Detail Employee</h3>
+  <table class="table table-bordered">
+    <tr><th>Username</th><td>{{ employee.username }}</td></tr>
+    <tr><th>Full Name</th><td>{{ employee.firstName }} {{ employee.lastName }}</td></tr>
+    <tr><th>Email</th><td>{{ employee.email }}</td></tr>
+    <tr><th>Birth Date</th><td>{{ employee.birthDate }}</td></tr>
+    <tr><th>Salary</th><td>{{ formatSalary(employee.basicSalary) }}</td></tr>
+    <tr><th>Status</th><td>{{ employee.status }}</td></tr>
+    <tr><th>Group</th><td>{{ employee.group }}</td></tr>
+    <tr><th>Description</th><td>{{ employee.description }}</td></tr>
+  </table>
+
+  <div class="text-end">
+    <button class="btn btn-primary" (click)="back()">OK</button>
+  </div>
+</div>

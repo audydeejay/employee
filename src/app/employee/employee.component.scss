@@ -1,0 +1,18 @@
+.action-btn {
+  margin-right: 5px;
+}
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  z-index: 1000;
+}
+.notification.edit {
+  background-color: orange;
+}
+.notification.delete {
+  background-color: red;
+}
